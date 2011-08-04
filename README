@@ -1,14 +1,24 @@
 Save for Web plug-in for The GIMP
-=====================
+=================================
 
 Save for Web plug-ins allows to experiment with various popular web format
 options. It shows an automatically updated preview and file size statistics.
 
-To build and install it, just ...
+Pre-requisites
+==============
 
-	./configure
-	make
-	make install
+To compile in Debian/Ubuntu, first install the following:
 
- ... and it's there.
+$ sudo apt-get install libtool automake intltool libgimp2.0-dev 
 
+Building
+========
+
+To build:
+
+$ ./autogen.sh
+$ make
+
+To install locally:
+
+$ cp src/webexport ~/.gimp-2.6/plug-ins/
